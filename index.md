@@ -100,7 +100,19 @@ Rules for naming:
         - use int() to convert to integer
         
 ### Formatting
-`print('I want to show you', var1, 'and', var2)`
+- Basic method:
+    - `print('I want to show you', var1, 'and', var2)`
+- Formatted:
+    - `print('I want to show you {} and {}'.format(var1, var2))`
+    - {} is where the variable will go
+- Can also format decimals
+    - {:.2f} will result in 2 decimal places
+    - `print('A number: {:.2f}'.format(floatingVar))
+
+### Comments
+- Anything written after '#' is a comment
+- Ignored within the actual code
+- Can also use ''' ''' for long paragraphs of comments
 
 
 
