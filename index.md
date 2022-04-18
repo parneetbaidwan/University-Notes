@@ -123,7 +123,7 @@ radius = float(userInp)
 area = 3.141 * (radius**2) # area formula
 print('The area of a circle with the radius {} is {:.2f).'.format(radius,area))
 ```
-
+output assuming radius is 2: 12.56
 ### firstCode.py
 ```
 radius = 5
@@ -135,14 +135,17 @@ radius = 10
 area = 3.141 * (radius**2)
 print(area)
 ```
-
+- output: 
+    - 78.525
+    - 5
+    - 314.1
 ### firstInput.py
 ```
 userInp = input('Type in your first name: ')
 greeting = 'Hi' + userInp
 print(greeting)
 ```
-
+output: Hi Parneet
 ### mathOps.py
 ```
 import math
@@ -153,6 +156,7 @@ c = 3
 x = (-b + math.sqrt(b**2 - 4*a*c)) / 2*a
 print(x)
 ```
+output: -0.5505102572168221
 
 ### string.py
 ```
@@ -161,7 +165,7 @@ secondString = 'more text'
 
 print(myString + secondString)
 
-newString = myString * 10
+newString = myString * 3
 
 print(newString)
 
@@ -170,3 +174,8 @@ print(len(myString))
 firstCharacter = myString[0]
 print(firstCharacter)
 ```
+- output:
+    - this is some textmore text
+    - this is some textthis is some textthis is some text
+    - 17
+    - t
