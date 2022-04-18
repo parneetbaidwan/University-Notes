@@ -116,12 +116,12 @@ Rules for naming:
 
 
 ### circleArea.py
-- this program computes the area of a circle from its radius
-`userInp = input('Please type in the circle radius: ')`
-`radius = float(userInp)`
+this program computes the area of a circle from its radius
+- `userInp = input('Please type in the circle radius: ')`
+- `radius = float(userInp)`
 
-`area = 3.141 * (radius**2) # area formula`
-`print('The area of a circle with the radius {} is {:.2f).'.format(radius,area))`
+- `area = 3.141 * (radius**2) # area formula`
+- `print('The area of a circle with the radius {} is {:.2f).'.format(radius,area))`
 
 
 
