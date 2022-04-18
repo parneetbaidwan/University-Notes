@@ -117,30 +117,56 @@ Rules for naming:
 
 ### circleArea.py
 this program computes the area of a circle from its radius
-- `userInp = input('Please type in the circle radius: ')`
-- `radius = float(userInp)`
-- `area = 3.141 * (radius**2) # area formula`
-- `print('The area of a circle with the radius {} is {:.2f).'.format(radius,area))`
+```
+userInp = input('Please type in the circle radius: ')
+radius = float(userInp)
+area = 3.141 * (radius**2) # area formula
+print('The area of a circle with the radius {} is {:.2f).'.format(radius,area))
+```
 
 ### firstCode.py
-- `radius = 5`
-- `area = 3.141 * (radius**2)`
-- `print(area)`
-- `print(radius)`
+```
+radius = 5
+area = 3.141 * (radius**2)
+print(area)
+print(radius)
 
-- `radius = 10`
-- `area = 3.141 * (radius**2)`
-- `print(area)`
+radius = 10
+area = 3.141 * (radius**2)
+print(area)
+```
 
 ### firstInput.py
+```
+userInp = input('Type in your first name: ')
+greeting = 'Hi' + userInp
+print(greeting)
+```
 
 ### mathOps.py
+```
+import math
+a = 1
+b = 6
+c = 3
+
+x = (-b + math.sqrt(b**2 - 4*a*c)) / 2*a
+print(x)
+```
 
 ### string.py
+```
+myString = 'this is some text'
+secondString = 'more text'
 
+print(myString + secondString)
 
+newString = myString * 10
 
+print(newString)
 
+print(len(myString))
 
-
-
+firstCharacter = myString[0]
+print(firstCharacter)
+```
