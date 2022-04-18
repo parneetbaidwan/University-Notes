@@ -119,9 +119,24 @@ Rules for naming:
 this program computes the area of a circle from its radius
 - `userInp = input('Please type in the circle radius: ')`
 - `radius = float(userInp)`
-
 - `area = 3.141 * (radius**2) # area formula`
 - `print('The area of a circle with the radius {} is {:.2f).'.format(radius,area))`
+
+### firstCode.py
+- `radius = 5`
+- `area = 3.141 * (radius**2)`
+- `print(area)`
+- `print(radius)`
+
+- `radius = 10`
+- `area = 3.141 * (radius**2)`
+- `print(area)`
+
+### firstInput.py
+
+### mathOps.py
+
+### string.py
 
 
 
