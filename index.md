@@ -162,7 +162,7 @@ print(x)
 - output: -0.5505102572168221
 
 ### string.py
-```
+``` 
 myString = 'this is some text'
 secondString = 'more text'
 print(myString + secondString)
