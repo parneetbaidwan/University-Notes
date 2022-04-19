@@ -179,3 +179,157 @@ print(firstCharacter)
     - this is some textthis is some textthis is some text
     - 17
     - t
+
+
+# CS1026 - Lecture 2
+
+## Conditions
+
+### Conditions
+- Conditions are a way to represent whether something is true or false
+  - 3 > 5 
+  - x >= 5
+
+### Relational Operators
+- Operators are needed to express conditions
+- Comparisons between two values:
+  - >, >=, <, <=
+- Equality and non equality:
+  - ==, !=
+
+### If Statements
+```
+if(condition):
+  #statement1
+  #statement2
+```
+- Statements will only execute if the condition is true
+- White space is very important --> Lines must be indented
+
+### If with Else
+```
+if(condition):
+  # executed if condition is TRUE
+else:
+  # executed if condition is FAlSE
+```
+
+### If, Elif, Else
+```
+if(condition1):
+  # executes if condition1 is true
+elif(condition2):
+  # executes if condition2 is true
+else:
+  # executes if neither condition is true
+```
+
+### Boolean Operators
+- and: true if both conditions are true
+  - eg) x >= 0 and x <= 10
+- or: true if one or both conditions are true
+  - eg) grade < 0 or grade > 100
+- not: "flip" the true - true if condition is false and vice versa
+  - eg) not(x > 0)
+  
+- Short Circuit Evaluations
+  - Evaluate the left operand and only evaluate the right if needed
+    - or: if the left is true, expression is true
+    - and: if left is false, expression is false
+    
+### Comparisons
+- Comparing Floating Point Numbers
+  - avoid using equality with floating point numbers:
+    - 67.76 * 100
+  - use epsilon - a small floating point tolerance that represents "close enough"
+    - test |x - y| < epsilon for some small value of epsilon
+      ```
+      epsilon = 1e - 14
+      if(abs(x-y) < epsilon):
+      ```
+- Comparing Strings
+  - compare with == and !=
+    - every single character in both strings are the same:
+      - same length
+      - each position is the same character
+      
+  - compare with < 
+    - operator is true for two strings if they are in lexicographic order
+      - "alphabetical order", "phone book order"
+    - easy if two strings differ in some position
+    - if one string is a prefix of the other, it comes first:
+      - eg) David < Davidson
+    - Numbers --> Uppercase --> Lowercase
+
+### Boolean Values
+- True and False
+  - Store values in a variable:
+    - `boolVar = True`
+  - Can be the result of a comparison:
+    - `boolVar = (1 > 3)`
+  - Can use in if statements
+    - ```
+      boolVar = (1 > 3)
+      if boolVar:
+        print('...')
+       ```
+### Try-Except
+- A condition Statement but without explicit conditions
+- Used primarily for error handling
+- ```
+  userInput = input('Enter an integer: ')
+  try:
+    integerValue = int(userInput)
+  except ValueError:
+    print('Error, etc...')
+  ```
+
+### boolOps.py
+```
+grade = 50
+if grade < 0 or grade > 100:
+  print('grade is invalid')
+else:
+  print('grade is valid')
+```
+
+### elifExample.py
+```
+x = 10
+y = 5
+z = 30
+
+if x == y:
+  print('x and y are the same')
+elif x > z:
+  print('x is greater than z')
+elif y > z:
+  print('y is greater than z')
+else:
+  print('nothing above was true')
+
+print('goodbye :)')
+```
+
+### firstIf.py
+```
+# short program showing how to use an if statement
+
+# get user input
+userInp = input('Enter your revenue: ')
+revenue = float(userInp)
+
+userInp = input('Enter your expenses: ')
+expenses = float(userInp)
+
+# your net
+net = revenue - expenses
+
+if net >= 0:
+  print('You made a profit of ${}'.format(net))
+  print('Good job!')
+else:
+  print('You lost ${}'.format(net))
+  print('Better luck next time.')
+print('Goodbye.')
+```
